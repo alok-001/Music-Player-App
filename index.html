@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AK Studio</title>
+
+	<!-- Adding Logo in the Tab bar -->
+    <link rel = "icon" href ="image/music_icon.png" type = "image/x-icon">
+
+    <!-- Linking main CSS FIle -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Adding CDN link of font-awesome -->
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  
+</head>
+<body>
+<!-------------- Header part containing logo, search-bar,bell icon, porifle-pic -------------------->
+<header>
+	<a href="index.html">
+            <div id="logo">
+              <img id="logo-image" src="image/music_icon.png" alt="SNS Studio">
+              
+
+              <!-- Name of the Music Player -->
+              <div id="sns-studio-text">
+                  <span id="alok">AK</span>
+                  <span id="studio" >Studio</span>
+              </div>
+            </div>
+          </a>
+           <!-- Link to Favourites-page -->
+            <div id="favourites">
+                <a href="Single Playlist Screen/index.html">
+                    <span>
+                        Favourites
+                    </span>
+                </a>
+            </div>
+
+            <!-------------------------Search Bar with icons------------------------->
+          <div id="search-bar-container">
+              <i id="search-icon" class="fas fa-search"></i>
+              <input id="search-bar" type="text" name="" placeholder=" Search">
+              <i id="microphone-icon" class="fas fa-microphone"></i>
+          </div>
+
+
+          <!-----------------------Bell icon-------------------------------->
+          <i id="bell-icon" class="fas fa-bell"></i>
+          
+          <!------------------------User Profile-pic------------------------>
+          <img id ="profile" src="image/my-image.jpg" alt="Profile picture">
+</header>
+ <!-- main-body -->
+ <div id="main-body">
+ 	<main>
+
+     <!----------------------------- Carousel Section ---------------------->
+ 		<div id="carousel-box">
+      <figure>
+        <img src="image/song-image/poster1a.jpg">
+        <img src="image/song-image/poster2a.jpg">
+        <img src="image/song-image/poster3a.jpg">
+        <img src="image/song-image/poster4a.jpg">
+        <img src="image/song-image/poster5a.jpg">
+        <img src="image/song-image/poster6a.jpg">
+        <img src="image/song-image/poster7a.jpg">
+        <img src="image/song-image/poster1a.jpg">
+      </figure>
+    </div>
+
+    <!----------------------------- Latest Release ----------------------->
+    <div id="latest-release">
+      <h2 class="Intro-of-div">Latest Release</h1>
+        <!------First part containing two tracks in row wise to maintain responsiveness ---------->
+    <div class="Latest-Release-div">
+
+      
+      <div class="Latest-Release-container">
+          <a href="Single Playlist Screen/index.html"><img class="Latest-Release-Image" src="image/BarrishKiJaave.jpg"></a>
+          <div class="Latest-Release-info">
+                <h3 class="title-name">Barrish Ki Jaaye</h3>
+                <p style="color: white;" class="artist-name">B Praak</p>
+          </div>
+            
+            <div class="duration">
+                <p> 4:11</p>
+
+              <!-- Dropdown menu for the three dotted button, only appear after hover on three dotted button -->
+                <div class="dropdown">
+                    <button class="dropbtn"> <a href=""><i style="color:white;" class="fas fa-ellipsis-h"></i></a></button>
+                    <div class="dropdown-content">
+                        <a href="Single Playlist Screen/index.html"><i class="fas fa-play"></i> Play Now </a>
+                        <a href="Single Playlist Screen/index.html"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                        <a href="Single Playlist Screen/index.html"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites</a>
+                        <a href="Single Playlist Screen/index.html"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+
+<!------Second part containing two tracks in row wise to maintain responsiveness ---------->
+      <div class="Latest-Release-container">
+          <a href="Single Playlist Screen/index.html"><img class="Latest-Release-Image" src="image/song-image/mehendiWaleHaath.jpg"></a>
+            
+
+    <!---------------------Name of the Song----------------- -->
+          <div class="Latest-Release-info">
+              <h3 class="title-name">Mehendi Wale Haath</h3>
+              <p style="color: white;" class="artist-name"> Guru Randhawa, Raghav Sachar</p>
+          </div>
+
+          <div class="duration">
+              <p>  3:33</p>
+              
+
+              <!-- Dropdown menu for the three dotted button, only appear after hover on three dotted button -->
+              <div class="dropdown">
+                <button class="dropbtn"> <a href=""><i style="color: white;" class="fas fa-ellipsis-h"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="Single Playlist Screen/index.html"> <i class="fas fa-play"></i> Play Now </a>
+                    <a href="Single Playlist Screen/index.html"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                    <a href="Single Playlist Screen/index.html"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites  </a>
+                    <a href="Single Playlist Screen/index.html"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!------Second part containing two tracks in row wise to maintain responsiveness -->
+    <div class="Latest-Release-div">
+        <div class="Latest-Release-container">
+            <a href="Single Playlist Screen/index.html"><img class="Latest-Release-Image" src="image/song-image/nadiyonPaar.jpg"></a>
+            
+
+            <!---------------------Name of the Song----------------- -->
+              <div class="Latest-Release-info">
+                <h3 class="title-name">Nadiyon Paar</h3>
+                <p style="color: white;" class="artist-name">Shamur</p>
+            </div>
+
+            <div class="duration">
+              <p>  2:43</p>
+
+      <!------ Dropdown menu for the three dotted button(songs info dotted menu) ------------->
+            <div class="dropdown">
+                <button class="dropbtn"> <a href=""><i style="color: white;" class="fas fa-ellipsis-h"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="Single Playlist Screen/index.html"> <i class="fas fa-play"></i> Play Now </a>
+                    <a href="Single Playlist Screen/index.html"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                    <a href="Single Playlist Screen/index.html"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites  </a>
+                    <a href="Single Playlist Screen/index.html"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                </div>
+            </div>
+              
+            </div>
+        </div>
+
+<!------Second subpart containing two tracks in row wise to maintain responsiveness -->
+
+        <div class="Latest-Release-container">
+          <a href="Single Playlist Screen/index.html"><img class="Latest-Release-Image" src="image/song-image/LutGaye.jpg"></a>
+
+          <!---------------------Name of the Song----------------- -->
+            <div class="Latest-Release-info">
+              <h3 class="title-name">Lut Gaye</h3>
+              <p style="color: white;" class="artist-name">Jubin Nautiyal</p>
+          </div>
+
+          <div class="duration">
+            <p> 3:48 </p>
+
+
+           <!-- Dropdown menu for the three dotted button, only appear after hover on three dotted button -->
+            <div class="dropdown">
+                <button class="dropbtn"><a href=""><i style="color: white;" class="fas fa-ellipsis-h"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="Single Playlist Screen/index.html"> <i class="fas fa-play"></i> Play Now </a>
+                    <a href="Single Playlist Screen/index.html"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                    <a href="Single Playlist Screen/index.html"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites  </a>
+                    <a href="Single Playlist Screen/index.html"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+<!------------------------------Popular Artist Section----------------------------- -->
+
+  <h1 class="Intro-of-div">Popular Artists</h1>         <!-- Title of the DIV----------->
+      <div id="Popular-Artist-conatiner">
+
+        <div class="Artist-style">
+            <a href="Single Playlist Screen/index.html"><img src="image/song-image/KumarSanu.jpg"></a>
+            <p>Kumar Sanu</p>
+        </div>
+
+
+        <div class="Artist-style">
+            <a href="Single Playlist Screen/index.html"><img src="image/song-image/DhvaniBhanushali.jpg"></a>
+            <p>Dhvani Bhanushali</p>
+        </div>
+
+
+        <div class="Artist-style">
+            <a href="Single Playlist Screen/index.html"><img src="image/song-image/GuruRandhawa.jpg"></a>
+            <p>Guru Randhawa</p>
+        </div>
+
+
+        <div class="Artist-style">
+            <a href="Single Playlist Screen/index.html"><img src="image/song-image/ShreyaGhoshal.jpg"></a>
+            <p>Shreya Ghoshal</p>
+        </div>
+
+
+        <div class="Artist-style">
+            <a href="Single Playlist Screen/index.html"><img src="image/song-image/ArijitSingh.jpg"></a>
+            <p>Arijit Singh</p>
+        </div>
+
+
+        <div class="Artist-style">
+            <a href="Single Playlist Screen/index.html"><img src="image/song-image/AlkaYagnik.jpg"></a>
+            <p>Alka Yagnik</p>
+        </div>
+
+    </div>
+    <!------------- Stations Section containing categories of music ------- -->
+          
+      <h1 class="Intro-of-div">Stations</h1>
+
+          <!-- this is the music themes part, the one with the tri-gradient background -->
+          <div class="music-themes">
+
+            <!-- this div will be the logo of music themes, see the output, the one with 3 squares/rects -->
+            <!-- the logo with orange, green and yellow color -->
+
+            <div class="stations">
+                <div id="div1">
+                    <div id="div2">
+                        <div id="div3">
+                            <img style="width: 5vw; height: 5vw;" src="image/music_icon.png">
+                            <p>Stations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- this is the content part of them themes -->
+            <!-- the one which changes colors on hover -->
+            <div class="theme-main">
+                <div class="theme-content">
+                    <a href="Single Playlist Screen/index.html"><img src="image/song-image/chill.jpg"></a>
+                    <p>Chill</p>
+                </div>
+                <div class="theme-content">
+                    <a href="Single Playlist Screen/index.html"><img src="image/song-image/rock.jpg"></a>
+                    <p>Rock</p>
+                </div>
+
+                <div class="theme-content">
+                    <a href="Single Playlist Screen/index.html"><img src="image/song-image/love.jpg"></a>
+                    <p>Love</p>
+                </div>
+
+                <div class="theme-content">
+                    <a href="Single Playlist Screen/index.html"><img src="image/song-image/pop.jpg"></a>
+                    <p>Pop</p>
+                </div>
+
+                <div class="theme-content">
+                    <a href="Single Playlist Screen/index.html"><img src="image/song-image/retro.jpg"></a>
+                    <p>Retro</p>
+                </div>
+
+                <div class="theme-content">
+                    <a href="Single Playlist Screen/index.html"><img src="image/song-image/workout.jpg"></a>
+                    <p>Workout</p>
+                </div>
+            </div>
+        </div>
+<!---------------------------- Latest English  ------------------------->
+<div class="latest-english">
+  <h2 class="Intro-of-div">Latest English</h1>
+    <div class="container">
+      <div class="latest-song-box">
+        <img src="image/song-image/PermissionToDance.jpg">
+        <p><b>Permission To Dance</b><br>9 July 2021</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/Dinero.jpg">
+        <p><b>Dinero</b><br>6 July 2018</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/Stay.jpg">
+        <p><b>Stay</b><br>7 January 2013</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/Biggin.jpg">
+        <p><b>Beggin</b><br>25 January 2020</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/WatermelonSugarXSeaside.jpg">
+        <p><b>Watermelon Sugar x Seaside</b><br>16 November 2019</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/Peaches.jpg">
+        <p><b>Peaches</b><br>19 March 2021</p>
+      </div>
+    </div>
+</div>
+<!---------------------------- Latest Hindi  --------------------------->
+<div class="latest-hindi">
+  <h2 class="Intro-of-div">Latest Hindi</h1>
+    <div class="container">
+      <div class="latest-song-box">
+        <img src="image/song-image/filhaal2.jpg">
+        <p><b>Filhaal 2</b><br>9 July 2021</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/BabyGirl.jpg">
+        <p><b>Baby Girl</b><br>1 October 2020</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/LutGaye.jpg">
+        <p><b>Lut Gaye</b><br>17 February 2021</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/PaaniPaani.jpg">
+        <p><b>Paani Paani</b><br>2 June 2021</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/BarrishKiJaave.jpg">
+        <p><b>Barrish Ki Jaave</b><br>27 March 2021</p>
+      </div>
+      <div class="latest-song-box">
+        <img src="image/song-image/NaachMeriRani.jpg">
+        <p><b>Naach Meri Rani</b><br>20 October 2020</p>
+      </div>
+    </div>
+</div>
+ 	</main>
+<!---------------------------- Aside Section --------------------------->
+<aside>
+  <div id="aside-head">
+    <div id="queue">
+      <h3>Queue</h3>
+    </div>
+    
+    <div id="drop">
+      <div id="button"><p>Queue &nbsp<p> <i class="fas fa-chevron-down"></i><div>
+      <div id="dropd">
+        <div class="dropdb"><a href="">Playlists</a></div>
+        
+        <div class="dropdb"><a href="">Favourite Songs</a></div>
+      </div>
+    </div>
+  </div>
+  <div id="aside-body">
+    <div class="song-box">
+      <div class="song-no" ><span>01</span></div>
+      <div class="song-img"><img src="image/song-image/BarrishKiJaave.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Barrish Ki Jaaye</h3>
+                <p style="color: white;" class="artist-name-aside">B Praak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >02</div>
+      <div class="song-img"><img src="image/song-image/mehendiWaleHaath.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Mehendi Wale Haath</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>03</span></div>
+      <div class="song-img"><img src="image/song-image/chhorDenge.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Chhor Denge</h3>
+                <p style="color: white;" class="artist-name-aside">Parampara Thakur</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >04</div>
+      <div class="song-img"><img src="image/song-image/Fashion.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Fashion</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>05</span></div>
+      <div class="song-img"><img src="image/song-image/Filhall.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Filhall</h3>
+                <p style="color: white;" class="artist-name-aside">B Praak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >06</div>
+      <div class="song-img"><img src="image/song-image/HighRatedGabru.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">High Rated Gabru</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>07</span></div>
+      <div class="song-img"><img src="image/song-image/KyaBaatAyjpg.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Kya Baat Ay</h3>
+                <p style="color: white;" class="artist-name-aside">Hardy Sandhu</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >08</div>
+      <div class="song-img"><img src="image/song-image/IshareTere.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Ishare Tere</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>09</span></div>
+      <div class="song-img"><img src="image/song-image/LutGaye.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Lut Gaye</h3>
+                <p style="color: white;" class="artist-name-aside">Jubin Nautiyal</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >10</div>
+      <div class="song-img"><img src="image/song-image/Lehenga.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Lehenga</h3>
+                <p style="color: white;" class="artist-name-aside">Jass Manak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>11</span></div>
+      <div class="song-img"><img src="image/song-image/NaachMeriRani.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Naach Meri Rani</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >12</div>
+      <div class="song-img"><img src="image/song-image/nadiyonPaar.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Nadiyon Paar</h3>
+                <p style="color: white;" class="artist-name-aside">Sachin-Jigar</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>13</span></div>
+      <div class="song-img"><img src="image/song-image/Prada.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Prada</h3>
+                <p style="color: white;" class="artist-name-aside">Jass Manak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >14</div>
+      <div class="song-img"><img src="image/song-image/TeraGhata.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Tere Ghata</h3>
+                <p style="color: white;" class="artist-name-aside">Gajendra Verma</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    
+  </div>
+</aside>
+ </div>
+ <footer>
+   <div class="f-left">
+     <div class="artist-img">
+       <img src="image/song-image/BarrishKiJaave.jpg">
+     </div>
+     <div class="artist-info">
+       <div>
+          <marquee scrollamount=2>Barrish Ki Jaaye</marquee>
+      </div>
+      <div>
+          <span>B Praak</span>
+      </div>
+     </div>
+     <div class="song-interaction">
+       <span class="co">
+          <i class="far fa-heart"></i>
+        </span>
+      <span>
+            <i class="fas fa-ban"></i>
+        </span>
+     </div>
+   </div>
+   <div class="f-middle">
+     <div class="button-section">
+       <div class="random">
+            <i class="fas fa-random"></i>
+        </div>
+        <div class="previous">
+            <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="play-pause">
+            <i class="far fa-pause-circle large-icon"></i>
+        </div>
+        <div class="play-next">
+            <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="stop-song">
+            <i class="far fa-stop-circle"></i>
+        </div>
+     </div>
+     <div class="song-duration">
+        <div class="curr-time">
+             2:45
+        </div>
+
+        <!-- timeline-section -->
+        <div class="timeline">
+            <div class="percentage-complete">
+
+            </div>
+        </div>
+
+        <!-- total-duration -->
+        <div class="total-time">
+            4:11
+        </div>
+      </div>
+   </div>
+   <div class="f-right">
+     <div class="volume-range">
+        <span>
+          <i class="fas fa-volume-mute"></i>
+        </span>
+        <input type="range" min="0" max="100" class="vol-slider">
+        <span><i class="fas fa-volume-up"></i></span>
+     </div>
+   </div>
+ </footer>
+</body>
+</html>

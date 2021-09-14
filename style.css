@@ -1,0 +1,855 @@
+body{
+  background-color: rgb(13,15,40);
+  margin-left: 20px;
+  padding-bottom: 15vh;
+
+}
+
+/* ----------------Header part Including log,Favourites,serachbar------------------- */
+   /*-----Header tag-----*/
+      header{
+        display: flex;
+        width:90vw;
+        height:6vw;
+        margin: 2vh 0px 0px 3vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+       #logo,a{
+        display: flex;
+        text-decoration: none;
+      }
+
+      #logo-image{
+        width:5vw;
+        height:5vw;
+      }
+       /*Logo text*/
+      #sns-studio-text{
+        display: flex;
+        flex-direction: column;
+      }
+
+      /*defining the Styles for the music player name*/
+      #alok{
+        font-family:'Lucida Sans', Verdana, sans-serif;
+        font-size: 1.7vw;
+        color:white;
+        margin-left: 1.4vw;
+        letter-spacing: 2px;
+      }
+
+      #studio{
+        margin-left: 1vw;
+        color:white;
+        font-size: 1.8vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 0.5vh;
+      }
+      #favourites a{
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    color: white;
+}
+
+#favourites a:hover{
+    color:orange;
+}
+/*----------------------- Search-bar Container in the header Section--------------------*/
+          #search-bar-container{
+            height: 2.9vw;
+            width:25vw;
+            display:flex;
+            justify-content: center;
+          }
+
+          #search-bar{
+            height: 2.4vw;
+            width:20vw;
+            border-radius: 20px;
+            background-color: #12193e;
+            font-size: 1vw;
+            border:none;
+            padding-left: 45px;
+            letter-spacing: 2px;
+            color:white;
+            margin-left: -2vw;
+
+          }
+          #search-icon{
+            position: relative;
+            color:#93a8b3;
+            margin-top: 1vh;
+            font-size: 1.2vw;
+          }
+
+          #microphone-icon{
+            color:#93a8b3;
+            margin-left:-2vw;
+            margin-top: 8px;
+            font-size: 1.2vw;
+          }
+
+/* ---------------------Bell-Icon in header part ------------------*/
+
+          #bell-icon{
+            right:100px;
+            color:white;
+            margin-left: 80px;
+            font-size: 1.5vw;
+            top:40px;
+            right:15%;
+            animation: rotatebellicon 0.6s ease-in-out  infinite  alternate;
+          }
+
+      /*Animation on the Bell Icon*/
+          @keyframes rotatebellicon{
+            from {
+              transform:rotate(-10deg) scale(1.2);
+            }
+
+            to{
+              transform:rotate(10deg);
+            }
+          }
+
+
+/* <!---------------------Profile-pic in the Header Part---------------------------> */
+          #profile{
+            position: relative;
+            width:4.5vw;
+            height:4.5vw;
+            border-radius: 50%;
+          }
+
+/*-------------------------Carousel part---------------------------------------*/
+
+#carousel-box{
+  overflow: hidden;
+  height: 50vh;
+  width: 66vw;
+}
+
+#carousel-box figure{
+  position: relative;
+  width:800%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#carousel-box figure img{
+  float:left;
+  width: 12.5%;
+  height: 50vh;
+}
+
+@keyframes slider{
+  0%{
+    left:0%;
+  }
+  10%{
+    left:0%;
+  }
+   15%{
+    left:-100%;
+  }
+   23%{
+    left:-100%;
+  }
+  28%{
+    left:-200%;
+  }
+  36%{
+    left:-200%;
+  }
+   41%{
+    left:-300%;
+  }
+   50%{
+    left:-300%;
+  }
+   60%{
+    left:-400%;
+  }
+  64%{
+    left:-400%;
+  }
+  73%{
+    left:-500%;
+  }
+   78%{
+    left:-500%;
+  }
+   86%{
+    left:-600%;
+  }
+  91%{
+    left:-600%;
+  }
+  100%{
+    left:-700%;
+  }
+  
+}
+/*---------------------latest release---------------------*/
+.Intro-of-div{
+        letter-spacing: 2px;
+        font-size:1.5vw;
+        margin-left: 3%;
+        margin-top: 3vh;
+        font-family:  Helvetica, sans-serif;
+        color:white;
+
+      }
+
+/* --------------------------Latest Release Display Section----------------------  */
+
+        #latest-release{
+          display: flex;
+          flex-direction: column;
+          width:66%;
+          margin-left: 4%;
+          justify-content:space-between;
+        }
+
+        .Latest-Release-container{
+          display: flex;
+          flex-direction: row;
+          height:25%;
+          width:45%;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .Latest-Release-container:hover .Latest-Release-Image {
+          width:9.8vw;
+          height: 5.8vw;
+          opacity:0.7;
+          -moz-border-radius:10px;
+          -webkit-border-radius:10px;
+          box-shadow: 5px 4px 8px 0 rgba(245, 245, 245, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+        }
+
+        .Latest-Release-div{
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          display: flex;
+          width:100%;
+          margin-top:2vh;
+        }
+        .Latest-Release-Image{
+          transition: ease-in-out 0.5s;
+          opacity: 0.9;
+          width:10vw;
+          height: 6vw;
+          border-radius: 0.9vh;
+          border-color:solid white 2px;
+        }
+
+        .Latest-Release-info{
+          position: relative;
+          align-items: flex-start;
+          justify-content: left;
+          margin-left: 2%;
+          width:40%;
+        }
+
+        .title-name{
+          font-size: 1.2vw;
+          color:white;
+        }
+
+        .artist-name{
+          color:var(--white-shade);
+          font-size: 1vw;
+        }
+
+        .duration{
+          position: relative;
+          display: flex;
+          flex-direction: column-reverse;
+          color:var(--white-shade);
+          font-size: 1.2vw;
+        }
+
+        .duration p{
+          font-size:1vw;
+          color: white;
+        }
+        .duration i{
+          font-size: 1.2vw;
+          color:var(--white-shade);
+          text-decoration: none;
+
+        }
+
+
+/* <<<<<--------------- Dropdown menu for the three dotted button ----------------->>>>> */
+
+    /*---------Button of three dotted Section in the top 4 songs----*/
+        .dropbtn {
+          background-color:  rgb(13,15,40);
+
+          border: none;
+        }
+
+        .dropdown {
+          width:7vw;
+          display: inline-block;
+          position: relative;
+        }
+
+        .dropdown-content {
+          position: absolute;
+          background-color: lightgrey;
+          min-width: 100%;
+          display: none;
+          z-index: 1;
+        }
+
+        .dropdown-content i{
+          color:#09df7f;
+          font-size: 0.5vw;
+        }
+
+        #plus-icon{
+          color:#df097b;
+        }
+
+        #circle-icon{
+          color:blue;
+        }
+
+        #playlist-icon{
+          color:#f51de3
+        }
+
+        .dropdown-content a {
+          border-bottom: solid rgb(104, 102, 102) 0.1px;
+          color: black;
+          padding: 0.6vw 0.4vw;
+          text-decoration: none;
+          display: block;
+          font-size: 0.5vw;
+        }
+
+        .dropdown-content a:hover {
+          background-color: orange;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* <!------------- Popular Artist Section ---------------> */
+        #Popular-Artist-conatiner{
+          display: flex;
+          width:64vw;
+          height: 11vw;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+          left:4%;
+        }
+
+        #Popular-Artist-conatiner img{
+          height:8vw;
+          width: 8vw;
+          border-radius: 50%;
+          opacity: 0.8;
+        }
+
+        .Artist-style{
+          display: block;
+          justify-content: flex-end;
+          height:8vw;
+          width: 8vw;
+          border-radius: 50%;
+        }
+
+        .Artist-style p{
+          font-size: 1vw;
+          text-align: center;
+          color:white;
+          letter-spacing: 0.2vh;
+          margin-top: 0.5vh;
+        }
+
+    /* --------Adding Animation to the Images so that when Hover then can bounce */
+        @keyframes bounce {
+          0%, 20%, 60%, 100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+
+          40% {
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+          }
+
+          80% {
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+          }
+        }
+
+    /*Animation on the artist's icon after hover*/
+        #Popular-Artist-conatiner img:hover{
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2);
+
+          animation: 1s bounce ;
+
+          /*border: 3px dotted #59a1ff;*/
+          color: #ff7a59;
+          background: #fff;
+          opacity:1;
+
+        }
+        /*<<<<<<<<<<<----------------------Starting of Music Stations(THEME) Section--------------->>>>>>>>>>>*/
+      .music-themes {
+        margin-left: 3.5vw;
+        margin-top: 5vh;
+        width: 64vw;
+        height: 12vw;
+        box-sizing: border-box;
+        background-color: #101642;  
+        display: flex;
+        border-radius: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        color:rgb(228, 225, 225);
+      }
+
+      /* --------------Stations Div------------- */
+      .stations {
+        position: absolute;
+        left:6vw;
+        padding:5px;
+      }
+
+      /* container for theme contents */
+      .theme-main {
+        width:100%;
+        margin-left: 14vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+/* these divs are for the colourful boxes in the themes section */
+      #div1 {
+        width: 11vw;
+        height: 7vw;
+        background-color: yellow;
+      }
+      #div2 {
+        position: relative;
+        top: -1vw;
+        left: 1vw;
+        width: 9vw;
+        height: 9vw;
+        background-color: yellowgreen;
+      }
+      #div3 {
+        position: relative;
+        top: -1vw;
+        left: 1vw;
+        width: 7vw;
+        height: 11vw;
+        background-color: orangered;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+ 
+/*--------------- logo in the outermost div--------- */
+      #div3 img {
+        margin-top: 4vh;
+        width: 5vw;
+        height: 5vw;
+        animation: rotateicon 5s ease-in-out infinite alternate ;
+        
+      }
+
+      @keyframes rotateicon{
+        from {
+          transform: rotate(0deg) scale(0.7);
+        }
+
+        to{
+          transform:rotate(360deg) ;
+        }
+      }
+
+
+  /* -----"stations" text---------- */
+      #div3 p {
+        font-size: 3vh;
+        color:white;
+      }
+
+  /* images in the music themes section */
+      .music-themes div img {
+        width: 7vw;
+        height: 7vw;
+        border-radius: 50%;
+      }
+  /* this is the sub content of the themes section */
+      .theme-content {
+        margin: 5px;
+        /* padding : 5px; */
+        height: 7vw;
+        width: 7vw;
+        text-align: center;
+        border-radius: 100%;
+      }
+
+  /* text within the themes section */
+      .theme-content p {
+        text-align: center;
+        position: relative;
+        top: -8.75vw;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        font-size: 1.5vw;
+        background-image: linear-gradient(0deg, rgb(162, 0, 255) -66%,rgba(0, 0, 0, 0));
+        transition: background-image 0.3s;
+      }
+
+
+  /* hovering effects on the contents of the divs inside the themes container */
+      .theme-content p:hover {
+        background-image: linear-gradient(0deg,rgb(255, 0, 0) -66%,rgba(0, 0, 0, 0));
+      }
+
+/*--------------- Latest English ------------------*/
+.container{
+  width: 66vw;
+  height: 30vh;
+  display: inline-flex;
+}
+.latest-song-box{
+  width: 9.5vw;
+  height: 29.5vh;
+  margin-left:15px;
+}
+.latest-song-box img{
+  width: 100%;
+  height: 22vh;
+  border-radius: 10px;
+  display: block;
+}
+.latest-song-box img:hover{
+box-shadow: 5px 4px 8px 0 rgba(245, 245, 245, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+}
+.latest-song-box p{
+  color: white;
+  font-size: 0.8rem;
+}
+/*---------------Aside Section--------------------*/
+aside{
+  background-color:rgb(13,15,40);
+  height: 85vh;
+  width: 30vw;
+  position: fixed;
+  left: 69vw;
+  top: 14vh;
+}
+#aside-head{
+  background-color:rgb(13,15,40);
+  color: white;
+  height:7vh;
+  width: 30vw;
+}
+#queue{
+  padding-left: 2vw;
+  width: 14vw;
+  height: 7vh;
+  line-height: 0.7;
+  display: inline-block;
+}
+#drop{
+  width: 13vw;
+  height: 7vh;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#button{
+  background-color:inherit;
+  text-align: right;
+
+}
+#button p{
+  color: white;
+  display: inline-block;
+}
+#dropd{
+
+  background-color: white;
+  display: none;
+  z-index: 1;
+  height: 8vh;
+  width: 7vw;
+}
+.dropdb{
+  height: 23.5px;
+  border-top: 1px solid black;
+}
+#button:hover #dropd{
+  margin-left:4vw;
+  padding-left:1vw;
+
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 6.4vh;
+}
+#dropd a{
+  color: black;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+#dropd a:hover{
+  color: blue;
+  font-size: 0.9rem;
+}
+#aside-body{
+  margin-top: -10px;
+  margin-left:-16vw;
+  height: 77vh;
+  width: 29vw;
+  overflow:auto ;
+}
+.song-box{
+  height:8vh;
+  width: 28vw;
+  padding-top: 10px;
+}
+.song-box:hover{
+  width: 29vw;
+  height: 9vh;
+}
+.song-no{
+  height:8vh;
+  width:2vw;
+  position: relative;
+  top:-2.6vh;
+  align-items:center;
+  display:inline-flex;
+}
+.song-img{
+  height: 8vh;
+  width: 4vw;
+  border-radius:0.9vh;
+  display: inline-flex;
+}
+.song-img img{
+  border-radius: 0.9vh;
+} 
+.song-detail{
+  display: inline-block;
+  position: relative;
+  align-items: flex-start;
+  justify-content: left;
+  margin-left: 2%;
+  width:40%;
+}
+.title-name-aside{
+          font-size: 1.1vw;
+          color:white;
+        }
+.artist-name-aside{
+          color:var(--white-shade);
+          font-size: 0.9vw;
+        }
+.song-fav{
+  display: inline-block;
+  width: 30%;
+}
+.song-fav i{
+  position: relative;
+  top: -2vh;
+  left: 5vw;
+
+}
+/*-----------------------Footer/Music Player---------------------*/
+footer{
+  width: 99.7%;
+  height:13vh;
+  position: fixed;
+  top: 87vh;
+  left: -0.1px;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: rgb(40,40,40);
+}
+.f-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+.f-left:hover{
+    transform: scale(1.1);
+}
+.artist-img{
+    width: 80px;
+    height: 67px;
+}
+.artist-img img{
+  width: 100%;
+  height: 100%;
+}
+.artist-info{
+    box-sizing: border-box;
+    padding: 5px;
+}
+.artist-info div:nth-of-type(1){
+    font-size: 0.8em;
+}
+
+.artist-info div:nth-of-type(2){
+    font-size: 0.6em;
+}
+
+.song-interaction{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.song-interaction span{
+    font-size: 1em;
+    padding: 5px;
+    transition: all 250ms ease-in-out;
+}
+.co :hover{
+  color: red;
+}
+.song-interaction span:hover{
+    transform: scale(1.1);
+}
+
+.song-interaction span:hover i{
+    font-weight: 900;
+}
+/*song-section-end*/
+
+/*music-control-section*/
+.f-middle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: all 250ms ease-in-out;
+}
+
+.f-middle:hover{
+    transform: scale(1.05);
+}
+
+.button-section{
+    padding-top:20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-section>div{
+    margin: 0 2%;
+    font-size: 1em;
+    transition: all 250ms ease-in-out;
+}
+
+.large-icon{
+    font-size: 1.8em;
+}
+
+.button-section>div:hover{
+    transform: scale(1.1);
+}
+
+.song-duration{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding-bottom: 10px;
+}
+
+.curr-time{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 0.9em;
+}
+
+.timeline{
+    box-sizing: border-box;
+    height: 033%;
+    margin: 8px 0;
+    background-color:white;
+}
+
+.percentage-complete{
+    width: 80%;
+    background: linear-gradient(to right, lightgreen, darkgreen);
+    height: 100%;
+}
+
+.total-time{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+/*music-control-section-end*/
+
+/*volume-control-section*/
+.f-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    align-items: center;
+    margin-left:3rem;
+    transition: all 250ms ease-in-out;
+}
+
+.f-right:hover{
+    transform: scale(1.1);
+}
+
+.f-right>div{
+    transition: all 250ms ease-in-out;
+}
+
+.volume-range{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.volume-range span{
+    font-size: 0.9em;
+}
+.vol-slider{
+    height: 4px;
+    width: 8em;
+    background: #28a745;
+}
