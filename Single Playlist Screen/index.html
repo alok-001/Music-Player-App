@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AK Studio</title>
+
+	<!-- Adding Logo in the Tab bar -->
+    <link rel = "icon" href ="../image/music_icon.png" type = "image/x-icon">
+
+    <!-- Linking main CSS FIle -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Adding CDN link of font-awesome -->
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<!-------------- Header part containing logo, search-bar,bell icon, porifle-pic -------------------->
+<header>
+	<a href="index.html">
+            <div id="logo">
+              <img id="logo-image" src="../image/music_icon.png" alt="SNS Studio">
+              
+
+              <!-- Name of the Music Player -->
+              <div id="sns-studio-text">
+                  <span id="alok">AK</span>
+                  <span id="studio" >Studio</span>
+              </div>
+            </div>
+          </a>
+           <!-- Link to Favourites-page -->
+            <div id="favourites">
+                <a href="../index.html">
+                    <span>
+                        Home
+                    </span>
+                </a>
+            </div>
+
+            <!-------------------------Search Bar with icons------------------------->
+          <div id="search-bar-container">
+              <i id="search-icon" class="fas fa-search"></i>
+              <input id="search-bar" type="text" name="" placeholder=" Search">
+              <i id="microphone-icon" class="fas fa-microphone"></i>
+          </div>
+
+
+          <!-----------------------Bell icon-------------------------------->
+          <i id="bell-icon" class="fas fa-bell"></i>
+          
+          <!------------------------User Profile-pic------------------------>
+          <img id ="profile" src="../image/my-image.jpg" alt="Profile picture">
+</header>
+<main>
+	<!------------------------Favourite Singer  ------------------------------------>
+	<div id="favourite-singer">
+		<div id="favourite-singer-img">
+			<img src="../image/song-image/bPraakBig.jpg">
+		</div>
+		<div id="favourite-singer-info">
+			<div id="favourite-singer-heading">
+				<div class="favourite-singer-name">
+                                    <div class="section-heading">
+                                        <h1>B Praak</h1>
+                                        <small>Indian Singer</small>
+                                    </div>
+                                </div>
+                                <div class="favourite-singer-followers">
+                                    <small>10.6M Followers</small>
+                                </div>
+			</div>
+			<div id="favourite-singer-discription">
+				<small>Pratik Bachan, best known by his stage name B Praak, is an Indian singer and music composer associated with the Punjabi and Hindi music industry. He started his career as a music producer, and later debuted as a singer with the song Mann Bharrya. He is a frequent collaborator of lyricist Jaani, and has since entered into Bollywood in 2019 with two songs as singer in the films Kesari and Good Newwz starring Akshay Kumar, and as a guest composer in the satire Bala.</small>
+			</div>
+			 <!-- favourite-album-controls -->
+                            <div class="favourite-album-controls">
+                                <button type="submit">Play All</button>
+                                <span>Follow</span>
+                                <div class="favourite-tracks">
+                                    <small>19 Tracks | 4 Albums</small>
+                                </div>
+                            </div>
+		</div>
+	</div>
+	<!---------------------------- Song List -------------------------------->
+	  <div id="song-list">
+    <div class="song-box">
+      <div class="song-no" ><span>01</span></div>
+      <div class="song-img"><img src="../image/song-image/BarrishKiJaave.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Barrish Ki Jaaye</h3>
+                <p style="color: white;" class="artist-name-aside">B Praak</p>
+                
+      </div>
+      <div class="time">4:11</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >02</div>
+      <div class="song-img"><img src="../image/song-image/mehendiWaleHaath.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Mehendi Wale Haath</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="time">3:40</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>03</span></div>
+      <div class="song-img"><img src="../image/song-image/chhorDenge.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Chhor Denge</h3>
+                <p style="color: white;" class="artist-name-aside">Parampara Thakur</p>
+      </div>
+      <div class="time">4:29</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >04</div>
+      <div class="song-img"><img src="../image/song-image/Fashion.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Fashion</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="time">2:41</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>05</span></div>
+      <div class="song-img"><img src="../image/song-image/Filhall.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Filhall</h3>
+                <p style="color: white;" class="artist-name-aside">B Praak</p>
+      </div>
+      <div class="time">5:30</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >06</div>
+      <div class="song-img"><img src="../image/song-image/HighRatedGabru.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">High Rated Gabru</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="time">3:37</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>07</span></div>
+      <div class="song-img"><img src="../image/song-image/KyaBaatAyjpg.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Kya Baat Ay</h3>
+                <p style="color: white;" class="artist-name-aside">Hardy Sandhu</p>
+      </div>
+      <div class="time">3:11</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >08</div>
+      <div class="song-img"><img src="../image/song-image/IshareTere.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Ishare Tere</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="time">3:21</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>09</span></div>
+      <div class="song-img"><img src="../image/song-image/LutGaye.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Lut Gaye</h3>
+                <p style="color: white;" class="artist-name-aside">Jubin Nautiyal</p>
+      </div>
+      <div class="time">4:58</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >10</div>
+      <div class="song-img"><img src="../image/song-image/Lehenga.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Lehenga</h3>
+                <p style="color: white;" class="artist-name-aside">Jass Manak</p>
+      </div>
+      <div class="time">3:46</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>11</span></div>
+      <div class="song-img"><img src="../image/song-image/NaachMeriRani.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Naach Meri Rani</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="time">3:43</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >12</div>
+      <div class="song-img"><img src="../image/song-image/nadiyonPaar.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Nadiyon Paar</h3>
+                <p style="color: white;" class="artist-name-aside">Sachin-Jigar</p>
+      </div>
+      <div class="time">2:28</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>13</span></div>
+      <div class="song-img"><img src="../image/song-image/Prada.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Prada</h3>
+                <p style="color: white;" class="artist-name-aside">Jass Manak</p>
+      </div>
+      <div class="time">3:11</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >14</div>
+      <div class="song-img"><img src="../image/song-image/TeraGhata.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Tere Ghata</h3>
+                <p style="color: white;" class="artist-name-aside">Gajendra Verma</p>
+      </div>
+      <div class="time">4:26</div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>&nbsp &nbsp&nbsp&nbsp&nbsp
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+    
+  </div>
+  <!----------------------------- Aside Section ----------------------------------->
+  <aside>
+  <div id="aside-head">
+    <div id="queue">
+      <h3>Similar Artist</h3>
+    </div>
+    
+    <div id="drop">
+      <div id="button"><p>Veiw  all &nbsp<p> <div>
+    </div>
+  </div>
+  <div id="aside-body">
+    <div class="song-box">
+      <div class="song-no" ><span>01</span></div>
+      <div class="song-img"><img src="../image/song-image/BarrishKiJaave.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Barrish Ki Jaaye</h3>
+                <p style="color: white;" class="artist-name-aside">B Praak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >02</div>
+      <div class="song-img"><img src="../image/song-image/mehendiWaleHaath.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Mehendi Wale Haath</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>03</span></div>
+      <div class="song-img"><img src="../image/song-image/chhorDenge.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Chhor Denge</h3>
+                <p style="color: white;" class="artist-name-aside">Parampara Thakur</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >04</div>
+      <div class="song-img"><img src="../image/song-image/Fashion.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Fashion</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>05</span></div>
+      <div class="song-img"><img src="../image/song-image/Filhall.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Filhall</h3>
+                <p style="color: white;" class="artist-name-aside">B Praak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >06</div>
+      <div class="song-img"><img src="../image/song-image/HighRatedGabru.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">High Rated Gabru</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>07</span></div>
+      <div class="song-img"><img src="../image/song-image/KyaBaatAyjpg.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Kya Baat Ay</h3>
+                <p style="color: white;" class="artist-name-aside">Hardy Sandhu</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >08</div>
+      <div class="song-img"><img src="../image/song-image/IshareTere.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Ishare Tere</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>09</span></div>
+      <div class="song-img"><img src="../image/song-image/LutGaye.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Lut Gaye</h3>
+                <p style="color: white;" class="artist-name-aside">Jubin Nautiyal</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >10</div>
+      <div class="song-img"><img src="../image/song-image/Lehenga.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Lehenga</h3>
+                <p style="color: white;" class="artist-name-aside">Jass Manak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>11</span></div>
+      <div class="song-img"><img src="../image/song-image/NaachMeriRani.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Naach Meri Rani</h3>
+                <p style="color: white;" class="artist-name-aside">Guru Randhawa</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >12</div>
+      <div class="song-img"><img src="../image/song-image/nadiyonPaar.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Nadiyon Paar</h3>
+                <p style="color: white;" class="artist-name-aside">Sachin-Jigar</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" ><span>13</span></div>
+      <div class="song-img"><img src="../image/song-image/Prada.jpg"></div>
+      <div class="song-detail">
+                <h3 class="title-name-aside">Prada</h3>
+                <p style="color: white;" class="artist-name-aside">Jass Manak</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    <div class="song-box">
+      <div class="song-no" >14</div>
+      <div class="song-img"><img src="../image/song-image/TeraGhata.jpg"></div>
+      <div class="song-detail">
+        <h3 class="title-name-aside">Tere Ghata</h3>
+                <p style="color: white;" class="artist-name-aside">Gajendra Verma</p>
+      </div>
+      <div class="song-fav">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    
+  </div>
+</aside>
+
+</main>
+<!--------------------------------- Footer ---------------------------------->
+<footer>
+	<div class="f-left">
+     <div class="artist-img">
+       <img src="../image/song-image/BarrishKiJaave.jpg">
+     </div>
+     <div class="artist-info">
+       <div>
+          <marquee scrollamount=2>Barrish Ki Jaaye</marquee>
+      </div>
+      <div>
+          <span>B Praak</span>
+      </div>
+     </div>
+     <div class="song-interaction">
+       <span class="co">
+          <i class="far fa-heart"></i>
+        </span>
+      <span>
+            <i class="fas fa-ban"></i>
+        </span>
+     </div>
+   </div>
+   <div class="f-middle">
+     <div class="button-section">
+       <div class="random">
+            <i class="fas fa-random"></i>
+        </div>
+        <div class="previous">
+            <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="play-pause">
+            <i class="far fa-pause-circle large-icon"></i>
+        </div>
+        <div class="play-next">
+            <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="stop-song">
+            <i class="far fa-stop-circle"></i>
+        </div>
+     </div>
+     <div class="song-duration">
+        <div class="curr-time">
+             2:45
+        </div>
+
+        <!-- timeline-section -->
+        <div class="timeline">
+            <div class="percentage-complete">
+
+            </div>
+        </div>
+
+        <!-- total-duration -->
+        <div class="total-time">
+            4:11
+        </div>
+      </div>
+   </div>
+   <div class="f-right">
+     <div class="volume-range">
+        <span>
+          <i class="fas fa-volume-mute"></i>
+        </span>
+        <input type="range" min="0" max="100" class="vol-slider">
+        <span><i class="fas fa-volume-up"></i></span>
+     </div>
+   </div>
+</footer>
+</body>
+</html>
